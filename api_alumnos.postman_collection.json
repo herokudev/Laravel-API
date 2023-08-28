@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "9be88728-330d-44bd-843b-3c203ef0da96",
+		"name": "api_alumnos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "1287742"
+	},
+	"item": [
+		{
+			"name": "mostrar-cursos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/cursos"
+			},
+			"response": []
+		},
+		{
+			"name": "curso-por-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/cursos/2"
+			},
+			"response": []
+		},
+		{
+			"name": "nuevo-curso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"HTML/CSS\",\r\n        \"descripcion\": \"Diseño de paginas web\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/cursos/new"
+			},
+			"response": []
+		},
+		{
+			"name": "modificar-curso",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"Introduccion a la programacion\",\r\n        \"descripcion\": \"course updated\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/cursos/edit/123"
+			},
+			"response": []
+		},
+		{
+			"name": "borrar-curso",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/cursos/delete/4"
+			},
+			"response": []
+		},
+		{
+			"name": "mostrar-alumnos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/alumnos"
+			},
+			"response": []
+		},
+		{
+			"name": "alumno-por-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/alumnos/12"
+			},
+			"response": []
+		},
+		{
+			"name": "nuevo-alumno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"Herbert\",\r\n        \"apellido\": \"Orellana\",\r\n        \"correo\": \"oherbert860@gmail.com\",\r\n        \"telefono\": \"46358815\",\r\n        \"pais\": \"Guatemala\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/alumnos/new"
+			},
+			"response": []
+		},
+		{
+			"name": "modificar-alumno",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"PEDRO\",\r\n        \"apellido\": \"JUAREZ\",\r\n        \"correo\": \"test@gmail.com\",\r\n        \"telefono\": \"46458815\",\r\n        \"pais\": \"MEXICO\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/alumnos/edit/8"
+			},
+			"response": []
+		},
+		{
+			"name": "borrar-alumno",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/alumnos/delete/10"
+			},
+			"response": []
+		},
+		{
+			"name": "mostrar-maestros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/maestros"
+			},
+			"response": []
+		},
+		{
+			"name": "meastro-por-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/maestros/5"
+			},
+			"response": []
+		},
+		{
+			"name": "nuevo-maestro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"Luke\",\r\n        \"apellido\": \"Skywalker\",\r\n        \"correo\": \"van.kreiger@koch.com\",\r\n        \"telefono\": \"+1-276-837-4172\",\r\n        \"pais\": \"Tatooine\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/maestros/new"
+			},
+			"response": []
+		},
+		{
+			"name": "modificar-maestro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"Sheldon\",\r\n        \"apellido\": \"Cooper\",\r\n        \"correo\": \"van.kreiger@koch.com\",\r\n        \"telefono\": \"+1-276-837-4172\",\r\n        \"pais\": \"Warner Bros.\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/maestros/edit/3"
+			},
+			"response": []
+		},
+		{
+			"name": "borrar-maestro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/maestros/delete/6"
+			},
+			"response": []
+		},
+		{
+			"name": "mostrar-asistencia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/asistencias"
+			},
+			"response": []
+		},
+		{
+			"name": "asistencia-por-alumno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/asistencias/3"
+			},
+			"response": []
+		},
+		{
+			"name": "nuevo-asistencia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"fechaRegistro\": \"2023-08-25\",\r\n        \"tipoRegistro\": \"A\",\r\n        \"id_alumno\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/asistencias/new"
+			},
+			"response": []
+		},
+		{
+			"name": "mostrar-alumnos-cursos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/alumnoscursos"
+			},
+			"response": []
+		},
+		{
+			"name": "mostrar-cursos-alumno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/alumnoscursos/1"
+			},
+			"response": []
+		},
+		{
+			"name": "nuevo-alumno-curso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id_alumno\": 1,\r\n        \"id_curso\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/alumnoscursos/new"
+			},
+			"response": []
+		},
+		{
+			"name": "mostrar-maestros-cursos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/maestroscursos"
+			},
+			"response": []
+		},
+		{
+			"name": "mostrar-cursos-maestro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/maestroscursos/1"
+			},
+			"response": []
+		},
+		{
+			"name": "nuevo-maestro-curso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id_maestro\": 3,\r\n        \"id_curso\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/maestroscursos/new"
+			},
+			"response": []
+		}
+	]
+}

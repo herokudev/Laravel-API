@@ -1,0 +1,168 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Alumnos-Cursos-Maestros",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:8000"
+        }
+    ],
+    "paths": {
+        "/api/alumnos": {
+            "get": {
+                "summary": "Mostrar alumnos",
+                "operationId": "1797e36f8e2f0c27b682c96225fd8fd9",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los alumnos."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/alumnos/{id}": {
+            "get": {
+                "summary": "Mostrar alumno por id",
+                "operationId": "5bef348b0b443f052b2752598de2b8c8",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar alumno segun su id"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/alumnos/new": {
+            "post": {
+                "summary": "Grabar nuevo alumno",
+                "operationId": "9b11d04259658de14464f73fc5fea000",
+                "responses": {
+                    "200": {
+                        "description": "Grabar nuevo alumno"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/alumnos/edit/{id}": {
+            "put": {
+                "summary": "Modificar informacion alumno",
+                "operationId": "4a6509bc5a752a112b5e49dbb1e433bb",
+                "responses": {
+                    "200": {
+                        "description": "Modificar informacion de un alumno segun su id"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/alumnos/delete/{id}": {
+            "delete": {
+                "summary": "Borrar alumno",
+                "operationId": "f3826a64a00758782d99eb863b4cbbff",
+                "responses": {
+                    "200": {
+                        "description": "Borrar alumno segun su id"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/alumnoscursos": {
+            "get": {
+                "summary": "Mostrar todos los alumnos con cursos",
+                "operationId": "8e01854a7985c9bedd34b06415474b18",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los alumnos con cursos."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/users": {
+            "get": {
+                "summary": "Mostrar usuarios",
+                "operationId": "566aed8efb436ca506e0ef51a032ecd9",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los usuarios."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/asistencias": {
+            "get": {
+                "summary": "Mostrar asistencia general",
+                "operationId": "da1d67a190220f7992911237f8f5af15",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar asistencia de todos los alumnos."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/cursos": {
+            "get": {
+                "summary": "Mostrar cursos",
+                "operationId": "44f59ff6202865ff09afe123bef8ada7",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los cursos."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/maestros": {
+            "get": {
+                "summary": "Mostrar maestros",
+                "operationId": "7d17d3bcca86564c1e07069f5ae5a316",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los maestros."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/maestroscursos": {
+            "get": {
+                "summary": "Mostrar todos los maestros con cursos",
+                "operationId": "56e32974a81ff6685a0f91c2f79f6b21",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los maestros con cursos asignados."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        }
+    }
+}
